@@ -12,7 +12,6 @@
 
     <!-- fontawesome -->
     <link href="css/all.min.css" rel="stylesheet">
-	 <link href="css/fontawesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   
  <!-- hover.css -->
@@ -23,7 +22,8 @@
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
  <link rel="stylesheet" href="css/owl.carousel.css">
 
-
+<!-- wow.js style -->
+<link rel="stylesheet" href="css/animate.css">
 
  <!-- stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -41,9 +41,9 @@
   
    
 
-<div class="cover" id="cover">
+<div class="cover cover-3" >
 </div>
-<div class="cover" id="cover-2">
+<div class="cover cover-2" >
 </div>
 
 
@@ -54,12 +54,12 @@
     <!-- start social bar -->
 <div class="social-bar">
   <ul class="social-icons">
-    <li><a href="#"><i class="fab fa-whatsapp wapp"></i></a></li>
-    <li><a href="#"><i class="fab fa-youtube u"></i></a></li>
-    <li><a href="#"><i class="fab fa-snapchat-ghost snap"></i></a></li>
-    <li><a href="#"><i class="fab fa-instagram insta"></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter tw"></i></a></li>
-    <li><a href="#"><i class="fab fa-facebook-f fb"></i></a></li>
+   <li><a href="#"><i class="fab fa-whatsapp whatsapp"></i></a></li>
+    <li><a href="#"><i class="fab fa-youtube youtube"></i></a></li>
+    <li><a href="#"><i class="fab fa-snapchat-ghost snapchat"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram instagram"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter twitter"></i></a></li>
+    <li><a href="#"><i class="fab fa-facebook-f facebook"></i></a></li>
   </ul>
   <a href="index-eng.html" class="lang">english</a>
 </div>
@@ -88,15 +88,20 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 
 <ul class="cart-section">
 <li><div class="dropdown">
-  <button  class="dropbtn"><a href="#" ><i class="fas fa-user"></i><span class="hidden-words">حسابي  </span></a></button>
+  <button  class="dropbtn">
+  	<a href="#" >
+  		<i class="fas fa-user"></i>
+  		<span class="hidden-words">حسابي  </span>
+  	</a>
+  </button>
   <div id="myDropdown" class="dropdown-content">
     <a href="index.html">تسجيل دخول   </a>
     <a href="index-eng.html">تسجيل جديد   </a>
    
   </div></li>
-<li class="ml0"><a href="#" class="shop-cart" id="cart-show"><i class="fas fa-shopping-cart "></i>
+<li class="ml0"><a href="#" class="shop-cart cart-show" ><i class="fas fa-shopping-cart "></i>
 <span class="cart-no">0</span> <span class="hidden-words">العربة  </span></a></li>
-<div class="cart-sidebar dismiss-2" id="sidebar">
+<div class="cart-sidebar dismiss-2 sidebar" >
 <div class="added-book">
   <a href="#"><img src="images/add-book-1.png" alt="book"></a>
   <div class="book-details">
@@ -148,12 +153,12 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 
      <!-- start navigation -->
     <section class="navigation">
-      <a id="nav-toggle" href="#!" ><i class="fas fa-bars" id="re-show"></i></a>
+      <a class="nav-toggle" href="#!" ><i class="fas fa-bars re-show" ></i></a>
 <div class="container">
-    <nav>
+    <nav class="nav-nav">
       
-      <ul class="nav-list dismiss" id="nav">
-        <li class="hidden-lg hidden-md"><i class="fas fa-times " id="re-hide"></i></li>
+      <ul class="nav-list dismiss navv" >
+        <li class="hidden-lg hidden-md"><i class="fas fa-times re-hide" ></i></li>
          <li>
           <a href="#" class="organize"><i class="fas fa-bars org-bars"></i> التصنيفات  <i class="far fa-angle-down org-ar-down"></i><i class="far fa-angle-up org-ar-down org-ar-up"></i></a>
                  <div class="nav-dropdown ">
@@ -299,7 +304,7 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
           <a href="#!">أضيف توا  </a>
         </li>
         <li>
-          <a href="#">مشاهير الكتاب   <i class="far fa-angle-down org-ar-down hidden-lg hidden-md"></i></a>
+          <a href="#">مشاهير الكتاب   <i class="far fa-angle-down org-ar-down hidden-lg hidden-md"></i><i class="far fa-angle-up org-ar-down org-ar-up hidden-lg hidden-md"></i></a>
                  <div class="nav-dropdown ">
               <div class="white-bg right">
               
@@ -446,7 +451,7 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
     </nav>
 </div>
     </section>
-  </div>
+ 
 <!-- end navbar -->
 
 <!-- start banner -->
@@ -456,9 +461,10 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 <!-- end banner -->
 
 <!-- start chosen carousel  -->
-<div class="container choose">
-  <h1>اخترنا لكم  </h1>
-<div class="owl-carousel chosen  owl-theme ">
+<div class="container ">
+	<div class="choose ">
+  <h1 class="wow fadeInRight">اخترنا لكم  </h1>
+<div class="owl-carousel chosen  owl-theme wow fadeInDown">
 
   <div class="item">
   <div class="book-block">
@@ -537,7 +543,7 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
   </div>
 
 </div>
-       
+ </div>   
 </div>
 <!-- end chosen carousel -->
 
@@ -545,47 +551,47 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 <div class="container">
   <div class="small-banners">
 
-    <div class="small-ban">
+    <div class="small-ban wow fadeInRight">
       <a href="#"><img src="images/small-ban-1.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
 
-    <div class="small-ban">
+    <div class="small-ban wow fadeInDown">
       <a href="#"><img src="images/small-ban-2.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
 
-    <div class="small-ban">
+    <div class="small-ban wow fadeInLeft">
       <a href="#"><img src="images/small-ban-3.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
 
-    <div class="small-ban">
+    <div class="small-ban wow fadeInRight">
       <a href="#"><img src="images/small-ban-4.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
 
-     <div class="small-ban">
+     <div class="small-ban wow fadeInDown">
       <a href="#"><img src="images/small-ban-5.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
     
-     <div class="small-ban">
+     <div class="small-ban wow fadeInLeft">
       <a href="#"><img src="images/small-ban-6.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
 
-     <div class="small-ban">
+     <div class="small-ban wow fadeInRight">
       <a href="#"><img src="images/small-ban-7.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
 
-     <div class="small-ban">
+     <div class="small-ban wow fadeInDown">
       <a href="#"><img src="images/small-ban-8.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
 
-     <div class="small-ban">
+     <div class="small-ban wow fadeInLeft">
       <a href="#"><img src="images/small-ban-9.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
@@ -596,8 +602,8 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 
 <!-- best-seller carousel -->
 <div class="container choose">
-  <h1>الأكثر مبيعا </h1>
-<div class="owl-carousel chosen  owl-theme ">
+  <h1 class="wow fadeInRight">الأكثر مبيعا </h1>
+<div class="owl-carousel chosen  owl-theme wow fadeInDown">
 
   <div class="item">
   <div class="book-block">               
@@ -683,48 +689,72 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 <!-- start writers carousel -->
 <div class="famous-writers">
   <div class="container">
-    <h1>مشاهير الكتاب </h1>
+    <h2 class="wow fadeInDown">مشاهير الكتاب </h2>
 
-<div class="owl-carousel writers  owl-theme ">
+<div class="owl-carousel writers  owl-theme wow fadeInDown">
 
   <div class="item">
   <div class="book-block">               
-  <a href="#"><img src="images/wr-1.png" alt="writer"></a>
+  <a href="#">
+  	<div class="img-border">
+  		<img src="images/writer-1.png" alt="writer">
+  	</div>
+  </a>
   <a href="#" class="book-name center">آرتور شوبنهور  </a>
   </div>
   </div>
    
    <div class="item">
   <div class="book-block">               
-  <a href="#"><img src="images/wr-2.png" alt="writer"></a>
+   <a href="#">
+  	<div class="img-border">
+  		<img src="images/writer-2.png" alt="writer">
+  	</div>
+  </a>
   <a href="#" class="book-name center">أحمد خالد توفيق   </a>
   </div>
   </div>       
   
    <div class="item">
   <div class="book-block">               
-  <a href="#"><img src="images/wr-3.png" alt="writer"></a>
+   <a href="#">
+  	<div class="img-border">
+  		<img src="images/writer-3.png" alt="writer">
+  	</div>
+  </a>
   <a href="#" class="book-name center">ألبرتو مانغويل </a>
   </div>
   </div>
   
   <div class="item">
   <div class="book-block">               
-  <a href="#"><img src="images/wr-4.png" alt="writer"></a>
+   <a href="#">
+  	<div class="img-border">
+  		<img src="images/writer-4.png" alt="writer">
+  	</div>
+  </a>
   <a href="#" class="book-name center">ألبير كامو  </a>
   </div>
   </div>
 
   <div class="item">
   <div class="book-block">               
-  <a href="#"><img src="images/wr-5.png" alt="writer"></a>
+   <a href="#">
+  	<div class="img-border">
+  		<img src="images/writer-5.png" alt="writer">
+  	</div>
+  </a>
   <a href="#" class="book-name center">أليف شافاك </a>
   </div>
   </div>
 
   <div class="item">
   <div class="book-block">               
-  <a href="#"><img src="images/wr-6.png" alt="writer"></a>
+   <a href="#">
+  	<div class="img-border">
+  		<img src="images/writer-6.png" alt="writer">
+  	</div>
+  </a>
   <a href="#" class="book-name center">أمين معلوف </a>
   </div>
   </div>
@@ -739,16 +769,46 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 <!-- start big-banners -->
 <div class="container">
 <div class="big-banners">
+	<div class="small-ban wow fadeInRight">
   <a href="#"><img src="images/big-ban-1.png" alt="banner"></a>
+   <img class="line" src="images/line.png" alt="line">
+</div>
+<div class="small-ban wow fadeInLeft">
   <a href="#"><img src="images/big-ban-2.png" alt="banner"></a>
+   <img class="line" src="images/line.png" alt="line">
+</div>
+<div class="small-ban wow fadeInRight">
   <a href="#"><img src="images/big-ban-3.png" alt="banner"></a>
+   <img class="line" src="images/line.png" alt="line">
+</div>
+<div class="small-ban wow fadeInLeft">
   <a href="#"><img src="images/big-ban-4.png" alt="banner"></a>
+   <img class="line" src="images/line.png" alt="line">
+</div>
+<div class="small-ban wow fadeInRight">
   <a href="#"><img src="images/big-ban-5.png" alt="banner"></a>
+   <img class="line" src="images/line.png" alt="line">
+</div>
+<div class="small-ban wow fadeInLeft">
   <a href="#"><img src="images/big-ban-6.png" alt="banner"></a>
+   <img class="line" src="images/line.png" alt="line">
+</div>
+<div class="small-ban wow fadeInRight">
   <a href="#"><img src="images/big-ban-7.png" alt="banner"></a>
+   <img class="line" src="images/line.png" alt="line">
+</div>
+<div class="small-ban wow fadeInLeft">
   <a href="#"><img src="images/big-ban-8.png" alt="banner"></a>
+   <img class="line" src="images/line.png" alt="line">
+</div>
+<div class="small-ban wow fadeInRight">
   <a href="#"><img src="images/big-ban-9.png" alt="banner"></a>
+   <img class="line" src="images/line.png" alt="line">
+</div>
+<div class="small-ban wow fadeInLeft">
   <a href="#"><img src="images/big-ban-10.png" alt="banner"></a>
+   <img class="line" src="images/line.png" alt="line">
+</div>
 </div>
 </div>
 <!-- end big banners -->
@@ -756,10 +816,10 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 <!-- start new-arrival carousel -->
 <div class="container choose">
   <div class="new-arrival">
-  <h1>أضيف توا </h1>
+  <h1 class="wow fadeInDown">أضيف توا </h1>
   <a href="#" class="more-2">عرض المزيد  </a>
 </div>
-<div class="owl-carousel chosen  owl-theme ">
+<div class="owl-carousel chosen  owl-theme wow fadeInDown">
 
   <div class="item">
   <div class="book-block">               
@@ -846,17 +906,17 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 <div class="container">
   <div class="small-banners">
 
-    <div class="small-ban">
+    <div class="small-ban wow fadeInRight">
       <a href="#"><img src="images/small-ban-10.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
 
-    <div class="small-ban">
+    <div class="small-ban wow fadeInDown">
       <a href="#"><img src="images/small-ban-11.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
 
-    <div class="small-ban">
+    <div class="small-ban wow fadeInLeft">
       <a href="#"><img src="images/small-ban-12.png" alt="small banner"></a>
       <img class="line" src="images/line.png" alt="line">
     </div>
@@ -868,10 +928,10 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 <!-- start book-accessories carousel -->
 <div class="container choose">
   <div class="new-arrival">
-  <h1>اكسسوارات الكتب  </h1>
+  <h1 class="wow fadeInDown">اكسسوارات الكتب  </h1>
   <a href="#" class="more-2">عرض المزيد  </a>
 </div>
-<div class="owl-carousel chosen  owl-theme ">
+<div class="owl-carousel chosen  owl-theme wow fadeInDown">
 
   <div class="item">
   <div class="book-block">               
@@ -955,34 +1015,34 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 <!-- end book-accessories carousel -->
 
 <!-- start footer -->
- <footer>
+ <footer class="footer-section wow fadeInDown">
 <div class="container">
  <div class="footer-content">
 
     <div class="footer">
     <a href="#"><img class="center-2" src="images/logo.png" alt="logo"></a>
     <p>لأننا نؤمن بأن النهضة تبدأ بالإنسان على المستوى الفردي، ولأن الكتب هي أساس المعرفة والتطور والتغيير، فقد أخذنا على عاتقنا إنتقاء عناوين ذات قيمة معرفية وجعلها في متناول اليد</p>
-    <h1>اشترك للحصول على الأخبار والعروض الحصرية لوراقون  </h1>
+    <h3>اشترك للحصول على الأخبار والعروض الحصرية لوراقون  </h3>
     <div class="newsletter">
     <input type="text" name="" placeholder="ادخل بريدك الإلكتروني ">
     <button><i class="fas fa-check"></i> اشتراك  </button>
   </div>
   <div class="footer-social">
     <h2>تابعنا على </h2>
-    <ul class="social-links">
-    <li><a href="#"><i class="fab fa-whatsapp "></i></a></li>
-    <li><a href="#"><i class="fab fa-youtube "></i></a></li>
-    <li><a href="#"><i class="fab fa-snapchat-ghost "></i></a></li>
-    <li><a href="#"><i class="fab fa-instagram "></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter "></i></a></li>
-    <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
-    </ul>
+     <ul class="social-icons">
+   <li><a href="#"><i class="fab fa-whatsapp whatsapp"></i></a></li>
+    <li><a href="#"><i class="fab fa-youtube youtube"></i></a></li>
+    <li><a href="#"><i class="fab fa-snapchat-ghost snapchat"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram instagram"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter twitter"></i></a></li>
+    <li><a href="#"><i class="fab fa-facebook-f facebook"></i></a></li>
+  </ul>
     <img src="images/marof.png" alt="pay method">
   </div>
   </div>
 
   <div class="footer">
-    <button class="accordion"><h1>خدمة القراء  </h1><i class="fas fa-angle-down hidden-lg hidden-md"></i></button>
+    <button class="accordion"><h3>خدمة القراء  </h3><i class="fas fa-angle-down hidden-lg hidden-md"></i></button>
     <ul class="footer-list panel">
       <li><a href="#">اطلب كتابا ليس بالمتجر </a></li>
       <li><a href="#">اقترح كتابا  </a></li>
@@ -993,7 +1053,7 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
   </div>
 
   <div class="footer">
-    <button class="accordion"><h1>حسابي </h1><i class="fas fa-angle-down hidden-lg hidden-md"></i></button>
+    <button class="accordion"><h3>حسابي </h3><i class="fas fa-angle-down hidden-lg hidden-md"></i></button>
     <ul class="footer-list panel">
       <li><a href="#">حسابي</a></li>
       <li><a href="#">طلباتي   </a></li>
@@ -1002,7 +1062,7 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
   </div>
 
   <div class="footer">
-    <button class="accordion"><h1>معلومات  </h1><i class="fas fa-angle-down hidden-lg hidden-md"></i></button>
+    <button class="accordion"><h3>معلومات  </h3><i class="fas fa-angle-down hidden-lg hidden-md"></i></button>
     <ul class="footer-list panel">
       <li><a href="#">من نحن  </a></li>
       <li><a href="#">الأسئلة الشائعة</a></li>
@@ -1049,7 +1109,8 @@ onchange="document.getElementById('displayValue').value=this.options[this.select
 <!-- owl carousel -->
 <script src="js/owl.carousel.min.js"></script>
 
-
+<!-- wow js -->
+<script src="js/wow.min.js"></script>
 
   </body>
   </html>

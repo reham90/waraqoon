@@ -2,7 +2,9 @@
 @font-face {
     font-family: 'FrutigerLTArabic';
     src: 
-        url('../font/FrutigerLTArabic-45Light.ttf') format('truetype');
+        url('../font/FrutigerLTArabic-45Light.woff2') format('woff2'),
+         url('../font/FrutigerLTArabic-45Light.woff') format('woff'),
+          url('../font/FrutigerLTArabic-45Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -10,7 +12,9 @@
 @font-face {
     font-family: 'FrutigerLTArabic';
     src:
-        url('../font/FrutigerLTArabic-55Roman.ttf') format('truetype');
+        url('../font/FrutigerLTArabic-55Roman.woff2') format('woff2'),
+         url('../font/FrutigerLTArabic-55Roman.woff') format('woff'),
+          url('../font/FrutigerLTArabic-55Roman.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,7 +24,9 @@
 @font-face {
     font-family: 'FrutigerLTArabic';
     src:
-        url('../font/FrutigerLTArabic-65Bold.ttf') format('truetype');
+        url('../font/FrutigerLTArabic-65Bold.woff2') format('woff2'),
+         url('../font/FrutigerLTArabic-65Bold.woff') format('woff'),
+          url('../font/FrutigerLTArabic-65Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -29,7 +35,9 @@
 @font-face {
     font-family: 'FrutigerLTArabic';
     src: 
-        url('../font/FrutigerLTArabic-75Black.ttf') format('truetype');
+        url('../font/FrutigerLTArabic-75Black.woff2') format('woff2'),
+         url('../font/FrutigerLTArabic-75Black.woff') format('woff'),
+          url('../font/FrutigerLTArabic-75Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
